@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="start"><button>Start Quiz</button></div>
+        <div class="info-box">
+            <div class="info-title">
+                <span>Instructions</span>
+            </div>
+            <div class="info-list">
+                <div class="info">1. You will have <span>15 seconds</span> per each question.</div>
+                <div class="info">2. Once you select answer, you cannot reselect.</div>
+                <div class="info">3. You cannot exit from Quiz while playing.</div>
+                <div class="info">4. Results will be announced given after test.</div>
+                <div class="info">5. You cannot select option after times goes off.</div>
+            </div>
+            <div class="buttons">
+                <button class="quit">Exit Quiz</button>
+                <button class="restart">Continue</button>
+            </div>
+        </div>
+
+        <div class="quiz-box">
+            <header>
+                <div class="title">COB Quiz Application</div>
+                <div class="timer">
+                    <div class="time-text">Time Left</div>
+                    <div class="timer-sec">15</div>
+                </div>
+                <div class="time-line"></div>
+            </header>
+            <section>
+                <div class="que-text">
+                </div>
+                <div class="option-list">
+                </div>
+            </section>
+            <footer>
+                <div class="total-que">
+                </div>
+                <button class="next-btn">Next</button>
+            </footer>
+        </div>
+        <div class="result-box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete-text">You have completed the Quiz!</div>
+            <div class="score-text">
+                <span>and sorry, You got only <p>2</p> out of <p>5</p></span>
+            </div>
+            <div class="buttons">
+                <button class="restart">Replay Quiz</button>
+                <button class="quit">Quit Quiz</button>
+            </div>
+        </div>
+    </div>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
